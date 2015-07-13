@@ -1,1 +1,130 @@
 
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Leridy,leridy.pw,www.leridy.pw,leridy blog,www.leridy.pw,个人网站,博客">
+    <meta name="description" content="欢迎关注www.leridy.pw，站长人很逗喜欢捣腾数码产品，也爱好前端开发。现在一直都在学习新知识！"/>
+    <title id="title">乐站 | LE-WEB</title>
+    <style id="bg"></style>
+    <style id="div"></style>
+    <link rel="stylesheet" href="./css/fa.css"/>
+    <link rel="stylesheet" href="css/fm.css">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script type="text/javascript">
+        document.getElementById("title").innerHTML="乐站 | 一个快乐的网站";
+
+    </script>
+
+</head>
+<body>
+
+    <nav>
+        <div id="logo"><img src="img/logo.jpeg" alt="logo" width="50px" height="50px"/> LERIDY</div>
+        <div id="time">时间与问候</div>
+        <div id="bannerNav" class="">
+            <ul id="navBody">
+                <li class="active"><a href="#search" ><span class="fa fa-search" ></span>&nbsp;搜索</a></li>
+                <li><a href="#navpart"><span class="fa fa-compass"></span>&nbsp; 导航</a></li>
+                <li><a href="#music"><span class="fa fa-music"></span> &nbsp;音乐</a></li>
+                <li><a href="#jieshao"><span class="fa fa-male"></span>&nbsp;关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--搜索部分-->
+    <div id="search" class="section ">
+        <h1><span class="fa fa-search"></span>&nbsp;LE-SOU</h1>
+        <form action="http://www.baidu.com/baidu" target="_blank"  class="inner">
+            <input name='tn' type='hidden' value='baidu' style="display: none"/>
+            <input type="text"  name="word"  size="50" autofocus placeholder=" 你想搜啥？ " id="input" >
+            <button type="submit"  id="submit">&nbsp;<span class="fa fa-search"></span>一点就搜&nbsp;</button>
+        </form>
+    </div>
+    <div id="navpart" class="section">
+        <header><h1><span class="fa fa-compass"></span>&nbsp;LE-NAV</h1></header>
+        <div id="nav">
+            <div class="inner">
+                <ul>
+                    <li><a href="http://www.leridy.pw/blog"  target="_blank">我的博客</a></li>
+                    <li><a href="http://www.leridy.pw/fm" target="_blank">音乐FM</a></li>
+                    <li><a href="http://www.weibo.com/leiyudi" target="_blank">个人微博</a></li>
+                    <li><a href="http://www.leridy.pw/about" target="_blank">关于本人</a></li>
+                    <li><a href="http://www.baidu.com" target="_blank">123</a></li>
+                    <li><a href="http://www.youku.com" target="_blank">&nbsp;优&nbsp;&nbsp;&nbsp;&nbsp;酷&nbsp;</a></li>
+                    <li><a href="http://www.taobao.com" target="_blank">&nbsp;淘&nbsp;&nbsp;&nbsp;&nbsp;宝&nbsp;</a></li>
+                    <li><a href="http://www.tmall.com" target="_blank">&nbsp;天&nbsp;&nbsp;&nbsp;&nbsp;猫&nbsp;</a></li>
+                    <li><a href="http://www.jd.com" target="_blank">&nbsp;京&nbsp;&nbsp;&nbsp;&nbsp;东&nbsp;</a></li>
+                    <li><a href="http://www.z.cn" target="_blank">&nbsp;亚&nbsp;马&nbsp;逊&nbsp;</a></li>
+                    <li><a href="http://www.weibo.com" target="_blank">新浪微博</a></li>
+                    <li><a href="http://www.qq.com" target="_blank">&nbsp;腾&nbsp;&nbsp;&nbsp;&nbsp;讯&nbsp;</a></li>
+                    <li><a href="http://www.sina.com.cn" target="_blank">&nbsp;新&nbsp;&nbsp;&nbsp;&nbsp;浪&nbsp;</a></li>
+                    <li><a href="http://www.sohu.com" target="_blank">&nbsp;搜&nbsp;&nbsp;&nbsp;&nbsp;狐&nbsp;</a></li>
+                    <li><a href="http://www.163.com" target="_blank">&nbsp;网&nbsp;&nbsp;&nbsp;&nbsp;易&nbsp;</a></li>
+                    <li><a href="http://www.lfzh.org" target="_blank">林枫紫涵</a></li>
+                    <li><a href="http://hanbin.me" target="_blank">寒冰博客</a></li>
+                    <li><a href="http://ilcl.cc" target="_blank">乐亦人生</a></li>
+                    <li><a href="http://www.eboovie.com" target="_blank">eboovie</a></li>
+                    <li><a href="http://yansm.github.io/fromzero/" target="_blank">前端牛人</a></li>
+                    <li><a href="http://www.luojia-whu.cn" target="_blank">学院官网</a></li>
+                    <li><a href="http://59.175.234.12" target="_blank" style="color:red;font-weight:bold">教务系统</a></li>
+                    <li><a href="http://tieba.baidu.com/f?kw=%CE%E4%BA%BA%B4%F3%D1%A7%E7%F3%E7%EC%D1%A7%D4%BA&fr=ala0" target="_blank">学院贴吧</a></li>
+                    <li><a href="http://www.leridy.pw/homework" target="_blank">学院模板</a></li>
+                    <li><a href="http://map.baidu.com/?newmap=1&s=con%26wd%3D%E6%AD%A6%E6%B1%89%E5%A4%A7%E5%AD%A6%E7%8F%9E%E7%8F%88%E5%AD%A6%E9%99%A2%26c%3D218&from=alamap&tpl=mapdots" target="_blank">学院地址</a></li>
+                    <li><a href="http://www.imooc.com/" target="_blank">&nbsp;慕&nbsp;课&nbsp;网&nbsp;</a></li>
+                    <li><a href="http://www.bootcss.com/" target="_blank" style="font-size:13px;">Bootstrap</a></li>
+                    <li><a href="#"  onclick="contact()">空位招租</a></li>
+                    <li><a href="#"  onclick="contact()">空位招租</a></li>
+                    <li><a href="#"  onclick="contact()">空位招租</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="control">
+        <div class="next"><i class="fa fa-chevron-right" title="下一曲"></i></div>
+    </div>
+    <div id="music" class="section">
+
+        <div class="container">
+            <h1><span class="fa fa-music"></span>&nbsp;LE-MUSIC</h1>
+            <div class="player">
+                <div class="cd">
+                    <div id="album" class="album">
+                        <img src="img/album.jpg" data-src="" id="cover">
+                        <div class="center">
+                            <span class="start"><i id="m_play" class="fa fa-play" onclick="load_music()"></i></span>
+                        </div>
+                    </div>
+                <span class="progress">
+                    <span class="current"></span>
+                </span>
+                </div>
+                <section class="title">
+                    <h1 class="name">Leridy FM - 听你想听</h1>
+                    <h2 class="sub-title">LEIYUDI.CN</h2>
+                </section>
+                <audio id="player" src=""></audio>
+            </div>
+        </div>
+
+    </div>
+    <div id="jieshao" class="section">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p id="copyright">&copy;2015 Leridy All Rights Reserved</p>
+        <p id="beian"><a href="http://www.miitbeian.gov.cn/" >鄂ICP备14000285号-1</a></p>
+    </footer>
+</body>
+<!--jQuery 部分-->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+<script src="./js/main.js"></script>
+<script src="js/fm.js"></script>
+
+</html>
