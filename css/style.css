@@ -1,0 +1,245 @@
+/*CSS OF INDEX
+  VERSION:1.0
+  AUTHOR:LERIDY
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+/*reset of css*/
+.active{
+    background-color: rgba(0,0,0,0.7);
+
+}
+html{
+    width: 100%;
+    height: 100%;
+
+}
+body{
+    background-image:url(../js/background.php) ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+h1{
+    font-family: microsoft yahei;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.section{
+  padding-top: 11%;
+
+}
+.inner{
+    margin: 0 auto;
+    width:1000px;
+    background-color: rgba(0,0,0,0.5);
+    height:120px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+footer{
+    bottom: 0px;
+    background-color:rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    height:50px;
+    text-align: center;
+    font-family: "microsoft yahei";
+    color: #fff;
+    padding: 5px;
+    z-index: 100;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+nav{
+    top: 0;
+    position: fixed;
+    width:100%;
+    height:50px;
+    background-color:rgba(1,1,1,0.4);
+    min-width:1000px;
+    font-family: "microsoft yahei";
+    z-index: 100;
+}
+
+nav #logo{
+    float: left;
+    margin-left: 10px;
+    width:18%;
+    text-align: center;
+    line-height:50px;
+    font-weight: bold;
+    font-size: 42px;
+    font-family: Verdana;
+    color:rgba(255,255,255,0.9);
+}
+nav #logo img{
+    vertical-align:text-bottom;
+    line-height:50px;
+}
+nav #bannerNav{
+    margin: 0 auto;
+    width: 60%;
+    height: inherit;
+}
+nav #bannerNav ul{
+    list-style-type: none;
+}
+nav #bannerNav ul li{
+    line-height: 50px;
+    display: inline-block;
+    width:25%;
+    border: none;
+    margin-right: -5px;
+}
+nav #bannerNav ul li a{
+    display: block;
+    text-align: center;
+
+}
+nav #bannerNav ul li a:hover{
+    background-color: rgba(0,0,0,0.4);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+nav #time{
+    float: right;
+    margin-right: 30px;
+    line-height:50px;
+    color:rgba(255,255,255,0.9);;
+    font-weight: bold;
+    text-align: center;
+    width: 15%;
+}
+
+#search{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(50,0,0,0.3);
+    background-position: 50% 50%;
+    display: block;
+    z-index: 99;
+}
+
+#search form{
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 45px;
+
+}
+#search form #input{
+    width: 400px;
+    height:30px;
+    font: 15px microsoft Yahei;
+    background-color: rgba(300,300,300,0.5);
+    margin-left:-50px ;
+}
+#search form button{
+    height:34px;
+    font: 15px microsoft Yahei;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+#search form #submit{
+    background-color:rgba(0,0,0,0.5);
+    position: absolute;
+}
+#search form #submit:hover{
+    background-color: rgba(0,0,0,0.7);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#navpart{
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255,250,99,0.3);
+    z-index: 99;
+}
+#navpart ul{
+    list-style-type: none;
+
+}
+#navpart ul li{
+    display:block;
+    height:40px;
+    width:100px;
+    float:left;
+    text-align:center;
+    position:relative;
+    font-size:16px;
+    line-height:40px;
+    cursor: pointer;
+}
+#navpart ul li:hover{
+    background-color: rgba(255,250,99,0.7);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#navpart ul li a{
+    font-family: "microsoft yahei";
+    padding:9px 17px 9px 17px;
+    font-weight:500;
+}
+#navpart ul li a:hover{
+    font-weight:bold;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#music{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(163,255,65,0.3);
+    z-index:99;
+}

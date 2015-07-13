@@ -1,0 +1,144 @@
+/* ---------------- [ Reset ] ---------------- */
+html, body, span, applet, object, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, 
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby,
+section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+html { display: block; }
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+strong { font-weight: bold; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* ---------------- [ Main ] ---------------- */
+.container {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.container h1{
+padding: 0px;
+}
+.player {}
+.cd {
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    line-height: 0; /* fix div height */
+}
+@-webkit-keyframes rotate { from {-webkit-transform: rotate(0deg) } to {-webkit-transform: rotate(360deg) } }
+@-moz-keyframes rotate { from {-moz-transform: rotate(0deg) } to {-moz-transform: rotate(359deg) } }
+@-o-keyframes rotate { from {-o-transform: rotate(0deg) } to {-o-transform: rotate(359deg) } }
+@keyframes rotate { from {transform: rotate(0deg) } to {transform: rotate(359deg) } }
+.paused img {
+    -webkit-animation-play-state: paused!important;
+       -moz-animation-play-state: paused!important;
+         -o-animation-play-state: paused!important;
+            animation-play-state: paused!important;
+}
+#album img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+}
+.control {
+    position:inherit;
+    top: 0px;
+    float:right;
+    margin: 50px 0 0 0px;
+    z-index: 999;
+    -webkit-transition: linear opacity .3s;
+       -moz-transition: linear opacity .3s;
+         -o-transition: linear opacity .3s;
+            transition: linear opacity .3s;
+}
+.control i {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2em;
+    border-radius: 50%;
+    text-align: center;
+}
+.control i:hover {
+    background: rgba(0,0,0,0.6);
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+.middle, .center, .start {
+    display: table-cell;
+    vertical-align: middle;
+}
+.cd:hover .center { opacity: 1; }
+.cd .start {
+    position: absolute; 
+    top: 0; 
+    margin-top: 100px;
+    margin-left: 104px;
+}
+.cd .start .fa-play, .cd .start .fa-pause {
+    color: rgba(255,255,255,0.6);
+    font-size: 54px;
+    z-index: 100;
+}
+.cd .start .fa-play:hover, .cd .start .fa-pause:hover {
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    z-index: 100;
+}
+.cd .center {
+    position: absolute;
+    margin-top: -250px;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: opacity linear.4s;
+       -moz-transition: opacity linear.4s;
+         -o-transition: opacity linear.4s;
+            transition: opacity linear.4s;
+    box-shadow: inset 0 0 15px 3px rgba(0,0,0,0.8);
+}
+.progress {
+    display: block;
+    height:3px;
+    margin-top: 20px;
+    width: 100%;
+    background: #ddd;
+    opacity: 1;
+}
+.progress .current {
+    position: relative;
+    display: block;
+    width: 0;
+    height: 100%;
+    background:  #666;
+    -webkit-transition:.5s ease;
+       -moz-transition:.5s ease;
+         -o-transition:.5s ease;
+            transition:.5s ease;
+}
+.title {
+    position: relative;
+    margin: 20px 0;
+    z-index: 99;
+    color: #222;
+}
+.title h1 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.title h1:before { content: "\300c"; }
+.title h1:after { content: "\300d"; }
+.title h2 {
+    margin: 10px 0;
+    font-size: 16px;
+}
