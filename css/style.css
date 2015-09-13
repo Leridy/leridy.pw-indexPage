@@ -243,3 +243,46 @@ nav #time{
     background-color: rgba(163,255,65,0.3);
     z-index:99;
 }
+
+.link:target{
+    z-index: 100;
+
+    -webkit-animation-name: slideBottom;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-name: slideBottom;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-name: slideBottom;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: 1;
+    -o-animation-name: slideBottom;
+    -o-animation-duration: 1s;
+    -o-animation-iteration-count: 1;
+    animation-name: slideBottom;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+}
+
+
+@-webkit-keyframes 'slideBottom' {
+    0% { top: 350px; }
+    100% { top: 0; }
+}
+@-moz-keyframes 'slideBottom' {
+    0% { top: 350px; }
+    100% { top: 0; }
+}
+@-ms-keyframes 'slideBottom' {
+    0% { top: 350px; }
+    100% { top: 0; }
+}
+@-o-keyframes 'slideBottom' {
+    0% { top: 350px; }
+    100% { top: 0; }
+}
+@keyframes 'slideBottom' {
+    0% { top: 350px; }
+    100% { top: 0; }
+}
